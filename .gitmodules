@@ -1,0 +1,9 @@
+[submodule "back/extractor"]
+	path = back/extractor
+	url = https://github.com/Tricomplex/back.extractor.git
+[submodule "back/scraper"]
+	path = back/scraper
+	url = https://github.com/Tricomplex/back.scraper.git
+[submodule "front"]
+	path = front
+	url = https://github.com/Tricomplex/tricomplex-frontend.git
