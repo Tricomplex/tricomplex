@@ -346,12 +346,12 @@ O golden nao deve comparar IDs auto incrementais. Ele deve comparar campos de ne
 - URL da fonte;
 - trecho relevante.
 
-O primeiro golden ideal deve cobrir:
+O primeiro golden ideal deve cobrir, para o recorte SP + 3 NCMs:
 
 - IPI para `20099000`, `22011000` e `22021000` via TIPI XLSX;
-- ICMS para SP via RICMS;
-- ICMS-ST via Portaria CAT 68/2019;
-- PIS e COFINS como regra federal inicial, se a fonte permitir afirmar com seguranca.
+- ICMS geral interno de SP via RICMS, aplicado aos 3 NCMs com observacao de que vale salvo excecoes especificas;
+- PIS e COFINS gerais nao cumulativos, aplicados aos 3 NCMs com observacao de regime/excecoes;
+- ICMS-ST e DIFAL como itens de revisao enquanto nao houver aliquota/MVA/vigencia especifica segura.
 
 Regra pratica: se a LLM nao conseguir justificar com trecho oficial, a regra nao entra como verdade no golden.
 
