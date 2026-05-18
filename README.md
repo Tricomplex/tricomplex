@@ -33,6 +33,12 @@ Para reduzir a complexidade inicial, o MVP esta limitado a:
   - `22011000`: agua mineral ou agua gaseificada
   - `22021000`: refrigerante / bebidas aromatizadas ou adicionadas de acucar
   - `20099000`: suco / misturas de sucos
+  - `22030000`: cerveja
+  - `84433233`: impressora
+  - `84439923`: cartucho de impressora
+  - `84439933`: toner de impressora
+  - `48025610`: papel
+  - `19059090`: alimento / produtos alimenticios de padaria/confeitaria
 - Tributos:
   - ICMS
   - DIFAL
@@ -346,11 +352,11 @@ O golden nao deve comparar IDs auto incrementais. Ele deve comparar campos de ne
 - URL da fonte;
 - trecho relevante.
 
-O primeiro golden ideal deve cobrir, para o recorte SP + 3 NCMs:
+O primeiro golden ideal deve cobrir, para o recorte SP + NCMs do MVP:
 
-- IPI para `20099000`, `22011000` e `22021000` via TIPI XLSX;
-- ICMS geral interno de SP via RICMS, aplicado aos 3 NCMs com observacao de que vale salvo excecoes especificas;
-- PIS e COFINS gerais nao cumulativos, aplicados aos 3 NCMs com observacao de regime/excecoes;
+- IPI para os NCMs do MVP via TIPI XLSX quando a linha existir na tabela oficial;
+- ICMS geral interno de SP via RICMS, aplicado aos NCMs do MVP com observacao de que vale salvo excecoes especificas;
+- PIS e COFINS gerais nao cumulativos, aplicados aos NCMs do MVP com observacao de regime/excecoes;
 - ICMS-ST e DIFAL como itens de revisao enquanto nao houver aliquota/MVA/vigencia especifica segura.
 
 Regra pratica: se a LLM nao conseguir justificar com trecho oficial, a regra nao entra como verdade no golden.
